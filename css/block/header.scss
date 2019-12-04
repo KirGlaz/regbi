@@ -1,0 +1,95 @@
+.header {
+    padding-top: 10px;
+    height: 47px;
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1320px;
+    border-bottom: 1px solid #1d3552;
+    border-left: 1px solid #1d3552;
+    border-right: 1px solid #1d3552;
+    &--left {
+        display: flex;
+    }
+    &--right {
+        display: flex;
+        margin-left: 419px;
+    }
+}
+
+.address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 363px;
+    border-right: 1px solid #1d3552;
+    height: 56px;
+    &::before {
+        content: url('../images/icons/gps.svg');
+        margin-right: 10px;
+    }
+}
+
+.phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    border-right: 1px solid #1d3552;
+    height: 56px;
+    &::before {
+        content: url('../images/icons/phones.svg');
+        margin-right: 10px;
+    }
+}
+
+.question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 198px;
+    border-left: 1px solid #1d3552;
+    height: 56px;
+    color: white;
+    font-family: 'Noto Sans Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    background: transparent;
+    text-transform: uppercase;
+    &::before {
+        content: url('../images/icons/speack.svg');
+        margin-right: 10px;
+    }
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 141px;
+    background: #4639ae;
+    border-left: 1px solid #1d3552;
+    height: 56px;
+    color: white;
+    font-family: 'Noto Sans Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    text-transform: uppercase;
+    &::before {
+        content: url('../images/icons/user.svg');
+        margin-right: 10px;
+    }
+}

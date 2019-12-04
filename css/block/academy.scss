@@ -1,0 +1,84 @@
+.academy {
+    padding-bottom: 59px;
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #244873;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        &--text {
+            font-family: "Noto Sans Display";
+            font-style: normal;
+            font-weight: 900;
+            font-size: 28px;
+        }
+    }
+    &__content {
+        display: flex;
+        position: relative;
+        margin-left: 23px;
+    }
+    &__menu {
+        z-index: 2;
+    }
+    &__photo {
+        position: absolute;
+        left: 660px;
+        top: 41px;
+        width: 660px;
+        height: 438px;
+    }
+}
+
+.menu {
+    display: flex;
+    &__list {
+        display: flex;
+    }
+    &__item {
+        width: 220px;
+        height: 260px;
+        color: white;
+        background: #4639ae;
+        border: 1px solid #5144b9;
+        &:hover {
+            background: #fb3d4e;
+            .title-menu {
+                flex-direction: column;
+                align-items: inherit;
+                &__subtract {
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.drops {
+    margin-bottom: 20px;
+    margin-top: 39px;
+    margin-left: 40px;
+}
+
+.title-menu {
+    width: 140px;
+    height: 148px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    &__text {
+        font-family: Noto Sans Display;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    &__subtract {
+        display: none;
+    }
+}
