@@ -1,0 +1,26 @@
+.main-about {
+    height: 234px;
+    background: #11253d;
+    color: white;
+    font-family: "Noto Sans Display";
+    &__container {
+        position: relative;
+        z-index: 2;
+    }
+    &__bg {
+        position: absolute;
+        z-index: 1;
+        left: 58%;
+        bottom: 2%;
+    }
+}
+
+.nav-about {
+    margin-left: 50px;
+    &__item {
+        margin-left: 30px;
+        &:first-child {
+            margin-left: 0px;
+        }
+    }
+}

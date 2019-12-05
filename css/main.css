@@ -1604,3 +1604,95 @@ img {
       position: absolute;
       top: 1px;
       right: 112px; }
+
+.main-about {
+  height: 234px;
+  background: #11253d;
+  color: white;
+  font-family: "Noto Sans Display"; }
+  .main-about__container {
+    position: relative;
+    z-index: 2; }
+  .main-about__bg {
+    position: absolute;
+    z-index: 1;
+    left: 58%;
+    bottom: 2%; }
+
+.nav-about {
+  margin-left: 50px; }
+  .nav-about__item {
+    margin-left: 30px; }
+    .nav-about__item:first-child {
+      margin-left: 0px; }
+
+.about {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 9;
+  grid-column: 1/10; }
+  .about__content {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 9;
+    grid-column: 1/10;
+    width: 100%;
+    background: white;
+    margin-top: -60px; }
+  .about__title {
+    font-family: Noto Sans Display;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 900;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid #f0f4fb; }
+  .about__text {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: #244873; }
+    .about__text--introduction, .about__text--region {
+      width: 73.74%; }
+  .about__head {
+    font-size: 48px;
+    color: #244873; }
+  .about__overhead {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 12px;
+    color: #244873; }
+
+.region {
+  width: 73.74%; }
+  .region__item--title {
+    font-family: Noto Sans Display;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 900; }
