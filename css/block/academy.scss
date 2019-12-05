@@ -1,6 +1,11 @@
 .academy {
+    grid-column: 1/13;
     padding-bottom: 59px;
+    &__container {
+        grid-column: 1/13;
+    }
     &__title {
+        grid-column: 1/13;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -15,29 +20,31 @@
         }
     }
     &__content {
+        grid-column: 1/13;
         display: flex;
         position: relative;
-        margin-left: 23px;
     }
     &__menu {
+        width: 100%;
         z-index: 2;
     }
     &__photo {
         position: absolute;
-        left: 660px;
-        top: 41px;
-        width: 660px;
-        height: 438px;
+        left: 50%;
+        top: 8%;
+        width: 50%;
     }
 }
 
-.menu {
+.menu-up,
+.menu-down {
     display: flex;
     &__list {
+        width: 880px;
         display: flex;
     }
     &__item {
-        width: 220px;
+        width: 25%;
         height: 260px;
         color: white;
         background: #4639ae;
@@ -54,6 +61,15 @@
                 }
             }
         }
+    }
+}
+
+.menu-up {
+    &__list {
+        width: 660px;
+    }
+    &__item {
+        width: 33.33%;
     }
 }
 

@@ -1,8 +1,13 @@
 .news {
+    grid-column: 1/13;
     font-family: "Noto Sans Display";
     background: #dfdfdf;
     padding-bottom: 32px;
+    &__container {
+        grid-column: 1/13;
+    }
     &__title {
+        grid-column: 1/13;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -17,6 +22,7 @@
         }
     }
     &__content {
+        grid-column: 1/13;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -24,6 +30,7 @@
         height: 447px;
     }
     &__slider {
+        width: 100%;
         background: #fff;
     }
     &__list {
@@ -33,7 +40,7 @@
     }
     &__item {
         position: relative;
-        width: 330px;
+        width: 25%;
         height: 384px;
         display: flex;
         flex-direction: column;
@@ -42,7 +49,7 @@
         border: 1px solid #F0F4FB;
     }
     &__photo {
-        width: 290px;
+        width: 87.88%;
         height: 220px;
         overflow: hidden;
         margin-bottom: 22px;
@@ -70,7 +77,7 @@
     }
     &__text {
         margin-bottom: 27px;
-        width: 250px;
+        width: 75.76%;
         height: 80px;
         font-family: Montserrat;
         font-style: normal;
@@ -79,32 +86,10 @@
         color: #244873;
     }
     &__buttons {
-        width: 1320px;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         background: #fff;
-    }
-    &__all {
-        width: 157px;
-        height: 63px;
-        background: #00c38d;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        &--btn {
-            color: white;
-            font-family: Noto Sans Display;
-            font-style: normal;
-            font-weight: 900;
-            font-size: 12px;
-            text-transform: uppercase;
-            width: 157px;
-            height: 63px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
     }
 }
 
@@ -113,10 +98,6 @@
     justify-content: center;
     align-items: center;
     margin-left: 34px;
-}
-
-.btn {
-    background: transparent;
 }
 
 .arrow-left {

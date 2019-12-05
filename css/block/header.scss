@@ -1,4 +1,5 @@
 .header {
+    grid-column: 1/13;
     padding-top: 10px;
     height: 47px;
     margin-bottom: 28px;
@@ -12,19 +13,20 @@
 }
 
 .header__container {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 1320px;
     border-bottom: 1px solid #1d3552;
     border-left: 1px solid #1d3552;
     border-right: 1px solid #1d3552;
     &--left {
+        width: 40.61%;
         display: flex;
     }
     &--right {
+        width: 25.68%;
         display: flex;
-        margin-left: 419px;
     }
 }
 

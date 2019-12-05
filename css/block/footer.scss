@@ -1,14 +1,14 @@
 .footer {
+    grid-column: 1/13;
     padding-bottom: 30px;
     &__content {
-        width: 1320px;
+        grid-column: 1/13;
         height: 251px;
         background: white;
         display: flex;
-        margin-left: 21px;
         padding-top: 43px;
         &--left {
-            margin-left: 41px;
+            margin-left: 34px;
         }
     }
 }
@@ -73,11 +73,12 @@
 }
 
 .footer__down {
-    width: 1280px;
+    grid-column: 1/13;
+    width: 97%;
     height: 63px;
     display: flex;
-    margin-top: -37px;
-    margin-left: 42px;
+    margin-top: -33px;
+    margin-left: 16px;
 }
 
 .communication {
