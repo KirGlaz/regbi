@@ -16,6 +16,10 @@
         width: 100%;
         &__right {
             display: flex;
+            grid-column: 7/13;
+        }
+        &__left {
+            grid-column: 1/5;
         }
     }
 }
@@ -33,7 +37,6 @@
 
 .title {
     margin-left: 17px;
-    width: 400px;
     &__overhead {
         font-style: normal;
         font-weight: 900;
@@ -57,19 +60,20 @@
 }
 
 .referee-book {
-    width: 330px;
-    height: 220px;
     background: #fff;
     color: #244873;
     &__info {
+        padding-bottom: 38px;
         position: relative;
     }
     &__content {
+        display: flex;
         margin-left: 40px;
         margin-top: 50px;
     }
     &__title {
-        padding: 41px 63px 24px 42px;
+        margin-right: 1px;
+        padding: 41px 4px 19px 38px;
         font-family: Noto Sans Display;
         font-style: normal;
         font-weight: 900;
@@ -83,24 +87,25 @@
     }
     &__shirt {
         position: absolute;
-        top: 114px;
-        left: 222px;
+        left: 68%;
+        bottom: 9%;
     }
 }
 
 .school-map {
     &__title {
-        padding: 40px 63px 24px 40px;
+        margin-right: 1px;
+        padding: 41px 33px 19px 43px;
         font-family: Noto Sans Display;
         font-style: normal;
         font-weight: 900;
         font-size: 16px;
-        width: 230px;
+        color: white;
         text-transform: uppercase;
     }
     &__info {
-        width: 330px;
-        height: 220px;
+        padding-bottom: 38px;
+        padding-right: 74px;
         background: url("../images/icons/schoolMap.svg") center center / cover no-repeat;
         position: relative;
     }
@@ -116,8 +121,8 @@
     }
     &__drops {
         position: absolute;
-        top: 39px;
-        left: 222px;
+        top: 17%;
+        left: 67%;
     }
     background: #4639ae;
 }

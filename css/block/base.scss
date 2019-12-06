@@ -75,29 +75,37 @@ img {
 
 .container {
     margin: 0 auto;
-    max-width: 1320px;
-    width: 95%;
+    max-width: 1360px;
+    padding: 0px 20px;
     display: grid;
-    grid-template-columns: 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    &__nopadding {
+        padding: 0px;
+    }
 }
 
 .maincontent {
     height: 100%;
     background: #DFDFDF;
+    position: relative;
 }
 
 .btn {
+    padding: 24px 40px 23px 40px;
+    ;
     color: white;
     font-family: Noto Sans Display;
     font-style: normal;
     font-weight: 900;
     font-size: 12px;
     text-transform: uppercase;
-    width: 157px;
-    height: 63px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     background: #00c38d;
+}
+
+.about__container {
+    display: flex;
 }

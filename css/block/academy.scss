@@ -25,7 +25,6 @@
         position: relative;
     }
     &__menu {
-        width: 100%;
         z-index: 2;
     }
     &__photo {
@@ -40,12 +39,9 @@
 .menu-down {
     display: flex;
     &__list {
-        width: 880px;
         display: flex;
     }
     &__item {
-        width: 25%;
-        height: 260px;
         color: white;
         background: #4639ae;
         border: 1px solid #5144b9;
@@ -65,12 +61,9 @@
 }
 
 .menu-up {
-    &__list {
-        width: 660px;
-    }
-    &__item {
-        width: 33.33%;
-    }
+    grid-column: 1/13;
+    &__list {}
+    &__item {}
 }
 
 .drops {
@@ -80,10 +73,6 @@
 }
 
 .title-menu {
-    width: 140px;
-    height: 148px;
-    margin-left: 40px;
-    margin-bottom: 40px;
     display: flex;
     align-items: flex-end;
     position: relative;

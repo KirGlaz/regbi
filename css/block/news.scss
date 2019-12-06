@@ -21,64 +21,57 @@
             font-size: 28px;
         }
     }
+    &__title-all {
+        justify-content: inherit;
+        align-items: inherit;
+    }
     &__content {
         grid-column: 1/13;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 447px;
     }
     &__slider {
         width: 100%;
         background: #fff;
     }
     &__list {
+        grid-column: 1/13;
         display: flex;
-        justify-content: center;
-        align-items: center;
     }
     &__item {
-        position: relative;
-        width: 25%;
-        height: 384px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid #F0F4FB;
+        padding: 20px;
+        padding-bottom: 51px;
+        width: 100%;
+        border: 1px solid #f0f4fb;
     }
     &__photo {
-        width: 87.88%;
-        height: 220px;
-        overflow: hidden;
-        margin-bottom: 22px;
+        width: 100%;
+        position: relative;
         &--pic {
-            object-fit: cover;
-            overflow: hidden;
+            width: 100%;
         }
     }
     &__data {
         position: absolute;
-        top: 205px;
-        left: 19px;
-        width: 91px;
-        height: 33px;
+        top: 85%;
+        left: 0%;
         background: white;
         text-align: center;
         &--text {
-            margin-top: 17px;
             font-family: Noto Sans Display;
             font-style: normal;
             font-weight: 900;
             font-size: 12px;
             color: #00c38d;
+            padding: 15px 38px 1px 20px;
         }
     }
     &__text {
-        margin-bottom: 27px;
-        width: 75.76%;
-        height: 80px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
         font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
@@ -86,7 +79,7 @@
         color: #244873;
     }
     &__buttons {
-        width: 100%;
+        grid-column: 1/13;
         display: flex;
         justify-content: space-between;
         background: #fff;
@@ -97,7 +90,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 34px;
+    margin-left: 39px;
 }
 
 .arrow-left {

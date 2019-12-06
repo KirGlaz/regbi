@@ -1,0 +1,95 @@
+.sidebar {
+    margin-top: -67px;
+    width: 33.29%;
+    //background: #ffffff;
+    z-index: 2;
+}
+
+.sidebar-menu {
+    width: 100%;
+    font-family: Noto Sans Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    background: #4639ae;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__list {
+        width: 75.76%;
+        padding-top: 41px;
+        padding-bottom: 20px;
+    }
+    &__item {
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgba(#f0f4fb, 0.3);
+        padding-bottom: 20px;
+        &:hover {
+            color: #fb3d4e;
+        }
+        &:last-child {
+            margin-bottom: 0px;
+            border-bottom: none;
+        }
+    }
+}
+
+.reports {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__content {
+        width: 100%;
+        background: #fff;
+    }
+    &__name {
+        line-height: 150%;
+        color: #244873;
+        &--title {
+            font-family: Noto Sans Display;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        &--text {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+        }
+    }
+    &__other {
+        display: flex;
+        &--left {
+            margin-left: 10px;
+            border-top: 1px solid #f0f4fb;
+            display: flex;
+            align-items: center;
+            width: 32%;
+            height: 63px;
+        }
+        &--right {
+            margin-left: 73px;
+        }
+    }
+}
+
+.reports-test {
+    font-family: Noto Sans Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    color: #fb3d4e;
+    text-transform: uppercase;
+    &::after {
+        content: url("../images/icons/test.svg");
+        margin-left: 10px;
+    }
+}

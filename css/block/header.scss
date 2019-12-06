@@ -1,6 +1,5 @@
 .header {
     grid-column: 1/13;
-    padding-top: 10px;
     height: 47px;
     margin-bottom: 28px;
     display: flex;
@@ -21,22 +20,19 @@
     border-left: 1px solid #1d3552;
     border-right: 1px solid #1d3552;
     &--left {
-        width: 40.61%;
         display: flex;
     }
     &--right {
-        width: 25.68%;
         display: flex;
     }
 }
 
 .address {
+    padding: 17px 45px 11px 42px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 363px;
     border-right: 1px solid #1d3552;
-    height: 56px;
     &::before {
         content: url('../images/icons/gps.svg');
         margin-right: 10px;
@@ -44,12 +40,11 @@
 }
 
 .phone {
+    padding: 19px 35px 11px 39px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
     border-right: 1px solid #1d3552;
-    height: 56px;
     &::before {
         content: url('../images/icons/phones.svg');
         margin-right: 10px;
@@ -57,12 +52,11 @@
 }
 
 .question {
+    padding: 20px 30px 14px 39px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 198px;
     border-left: 1px solid #1d3552;
-    height: 56px;
     color: white;
     font-family: 'Noto Sans Display';
     font-style: normal;
@@ -77,13 +71,12 @@
 }
 
 .input {
+    padding: 24px 36px 18px 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 141px;
     background: #4639ae;
     border-left: 1px solid #1d3552;
-    height: 56px;
     color: white;
     font-family: 'Noto Sans Display';
     font-style: normal;
