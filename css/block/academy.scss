@@ -20,7 +20,12 @@
         }
     }
     &__content {
-        grid-column: 1/13;
+        &--up {
+            grid-column: 1/7;
+        }
+        &--down {
+            grid-column: 1/9;
+        }
         display: flex;
         position: relative;
     }
@@ -37,19 +42,25 @@
 
 .menu-up,
 .menu-down {
+    grid-column: 1/9;
     display: flex;
     &__list {
         display: flex;
     }
     &__item {
+        position: relative;
         color: white;
         background: #4639ae;
         border: 1px solid #5144b9;
         &:hover {
             background: #fb3d4e;
             .title-menu {
+                padding: 72px 0px 45px 40px;
                 flex-direction: column;
                 align-items: inherit;
+                &__text {
+                    padding-top: 27px;
+                }
                 &__subtract {
                     display: block;
                     position: absolute;
@@ -61,18 +72,19 @@
 }
 
 .menu-up {
-    grid-column: 1/13;
+    grid-column: 1/7;
     &__list {}
-    &__item {}
+    &__item {
+        padding: 72px 0px 0px 0px;
+    }
 }
 
 .drops {
-    margin-bottom: 20px;
-    margin-top: 39px;
-    margin-left: 40px;
+    position: absolute;
 }
 
 .title-menu {
+    padding: 102px 0px 40px 40px;
     display: flex;
     align-items: flex-end;
     position: relative;

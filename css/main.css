@@ -721,7 +721,7 @@ img {
   grid-column: 1/13;
   font-family: "Noto Sans Display";
   background: #dfdfdf;
-  padding-bottom: 32px; }
+  padding-bottom: 56px; }
   .news__container {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
@@ -873,13 +873,18 @@ img {
       font-weight: 900;
       font-size: 28px; }
   .academy__content {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
-    grid-column: 1/13;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: relative; }
+    .academy__content--up {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 6;
+      grid-column: 1/7; }
+    .academy__content--down {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 8;
+      grid-column: 1/9; }
   .academy__menu {
     z-index: 2; }
   .academy__photo {
@@ -890,6 +895,9 @@ img {
 
 .menu-up,
 .menu-down {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1/9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -900,6 +908,7 @@ img {
     display: flex; }
   .menu-up__item,
   .menu-down__item {
+    position: relative;
     color: white;
     background: #4639ae;
     border: 1px solid #5144b9; }
@@ -908,6 +917,7 @@ img {
       background: #fb3d4e; }
       .menu-up__item:hover .title-menu,
       .menu-down__item:hover .title-menu {
+        padding: 72px 0px 45px 40px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -915,6 +925,9 @@ img {
         -webkit-box-align: inherit;
         -ms-flex-align: inherit;
         align-items: inherit; }
+        .menu-up__item:hover .title-menu__text,
+        .menu-down__item:hover .title-menu__text {
+          padding-top: 27px; }
         .menu-up__item:hover .title-menu__subtract,
         .menu-down__item:hover .title-menu__subtract {
           display: block;
@@ -923,15 +936,16 @@ img {
 
 .menu-up {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 12;
-  grid-column: 1/13; }
+  -ms-grid-column-span: 6;
+  grid-column: 1/7; }
+  .menu-up__item {
+    padding: 72px 0px 0px 0px; }
 
 .drops {
-  margin-bottom: 20px;
-  margin-top: 39px;
-  margin-left: 40px; }
+  position: absolute; }
 
 .title-menu {
+  padding: 102px 0px 40px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
