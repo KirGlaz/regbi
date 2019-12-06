@@ -18,7 +18,7 @@
                 <div class="main__bg">
                     <img class="main__bg--pic" src="./images/icons/logoBg.svg">
                 </div>
-                <div class="container main__container">
+                <div class="container main__container grid">
                     <header class="header">
                         <div class="header__container">
                             <div class="header__container--left">
@@ -107,7 +107,7 @@
                     </div>
 
                     <div class="main__info">
-                        <div class="container container__nopadding">
+                        <div class="row">
                             <div class="main__info__left">
                                 <div class="title">
                                     <h3 class="title__overhead">Федерация регби России</h3>
@@ -146,13 +146,13 @@
             </section>
 
             <section class="section news">
-                <div class="container news__container">
+                <div class="container news__container row">
                     <div class="news__title">
                         <h2 class="news__title--text">Новости</h2>
                     </div>
                     <div class="news__content">
                         <div class="news__slider">
-                            <div class="container container__nopadding">
+                            <div class="row row--quart">
                                 <ul class="news__list">
                                     <li class="news__item">
                                         <div class="news__photo">
@@ -226,112 +226,64 @@
 
             <section class="section academy">
                 <div class="container academy__container">
-                    <div class="academy__title">
-                        <h2 class="academy__title--text">Программа академии</h2>
+                    <h2 class="academy__title row">Программа академии</h2>
+                    <div class="academy__content">
+                        <ul class="academy__list row row--double">
+                            <li class="academy__item">
+                                <h2 class="title-menu__text">Тренерам по физ.подготовке</h2>
+                                <a href="#" class="title-menu__subtract">
+                                    <img class="title-menu__subtract--pic" src="./images/icons/subtract.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="academy__item">
+                                <h2 class="title-menu__text">Тренерам по спорту</h2>
+                                <a href="#" class="title-menu__subtract">
+                                    <img class="title-menu__subtract--pic" src="./images/icons/subtract.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="academy__item">
+                                <h2 class="title-menu__text">Судьям</h2>
+                                <a href="#" class="title-menu__subtract">
+                                    <img class="title-menu__subtract--pic" src="./images/icons/subtract.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="academy__list row row--double">
+                            <li class="academy__item">
+                                <h2 class="title-menu__text">Менеджерам</h2>
+                                <a href="#" class="title-menu__subtract">
+                                    <img class="title-menu__subtract--pic" src="./images/icons/subtract.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="academy__item">
+                                <h2 class="title-menu__text">Игрокам</h2>
+                                <a href="#" class="title-menu__subtract">
+                                    <img class="title-menu__subtract--pic" src="./images/icons/subtract.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="academy__item">
+                                <h2 class="title-menu__text">Скаутам/Аналитикам</h2>
+                                <a href="#" class="title-menu__subtract">
+                                    <img class="title-menu__subtract--pic" src="./images/icons/subtract.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="academy__item">
+                                <h2 class="title-menu__text">Агентам</h2>
+                                <a href="#" class="title-menu__subtract">
+                                    <img class="title-menu__subtract--pic" src="./images/icons/subtract.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-
-                    <div class="academy__content--up">
-                        <div class="menu-up">
-                            <ul class="menu-up__list">
-                                <li class="menu-up__item">
-                                    <div class="drops">
-                                        <img class="drops__pic" src="./images/icons/drops.svg">
-                                    </div>
-                                    <div class="title-menu">
-                                        <h2 class="title-menu__text">Тренерам по физ.подготовке</h2>
-                                        <a href="#" class="title-menu__subtract">
-                                            <img class="title-menu__subtract--pic" src="./images/icons/subtract.svg">
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="menu-up__item">
-                                    <div class="drops">
-                                        <img class="drops__pic" src="./images/icons/drops.svg">
-                                    </div>
-                                    <div class="title-menu">
-                                        <h2 class="title-menu__text">Тренерам по спорту</h2>
-                                        <a href="#" class="title-menu__subtract">
-                                            <img class="title-menu__subtract--pic" src="./images/icons/subtract.svg">
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="menu-up__item">
-                                    <div class="drops">
-                                        <img class="drops__pic" src="./images/icons/drops.svg">
-                                    </div>
-                                    <div class="title-menu">
-                                        <h2 class="title-menu__text">Судьям</h2>
-                                        <a href="#" class="title-menu__subtract">
-                                            <img class="title-menu__subtract--pic" src="./images/icons/subtract.svg">
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="academy__content--down">
-                        <div class="menu-down">
-                            <ul class="menu-down__list">
-                                <li class="menu-down__item">
-                                    <div class="drops">
-                                        <img class="drops__pic" src="./images/icons/drops.svg">
-                                    </div>
-                                    <div class="title-menu">
-                                        <h2 class="title-menu__text">Менеджерам</h2>
-                                        <a href="#" class="title-menu__subtract">
-                                            <img class="title-menu__subtract--pic" src="./images/icons/subtract.svg">
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="menu-down__item">
-                                    <div class="drops">
-                                        <img class="drops__pic" src="./images/icons/drops.svg">
-                                    </div>
-                                    <div class="title-menu">
-                                        <h2 class="title-menu__text">Игрокам</h2>
-                                        <a href="#" class="title-menu__subtract">
-                                            <img class="title-menu__subtract--pic" src="./images/icons/subtract.svg">
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="menu-down__item">
-                                    <div class="drops">
-                                        <img class="drops__pic" src="./images/icons/drops.svg">
-                                    </div>
-                                    <div class="title-menu">
-                                        <h2 class="title-menu__text">Скаутам/Аналитикам</h2>
-                                        <a href="#" class="title-menu__subtract">
-                                            <img class="title-menu__subtract--pic" src="./images/icons/subtract.svg">
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="menu-down__item">
-                                    <div class="drops">
-                                        <img class="drops__pic" src="./images/icons/drops.svg">
-                                    </div>
-                                    <div class="title-menu">
-                                        <h2 class="title-menu__text">Агентам</h2>
-                                        <a href="#" class="title-menu__subtract">
-                                            <img class="title-menu__subtract--pic" src="./images/icons/subtract.svg">
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="academy__photo">
-                        <img class="academy__photo--pic" src="./images/content/academy.jpg">
-                    </div>
+                </div>
             </section>
 
             <section class="section study">
                 <div class="container study__container">
-                    <div class="study__title">
+                    <div class="study__title row">
                         <h2 class="study__title--text">Учебные материалы</h2>
                     </div>
-                    <div class="study__content">
+                    <div class="study__content grid">
                         <div class="study__content--left">
                             <div class="player">
                                 <a class="play player__play">
@@ -391,103 +343,110 @@
             </section>
 
             <section class="section articles">
-                <div class="container articles__container">
+                <div class="container articles__container row">
                     <div class="articles__title">
                         <h2 class="articles__title--text">Статьи</h2>
                     </div>
                     <div class="articles__content">
                         <div class="articles__slider">
-                            <ul class="articles__list">
-                                <li class="articles__item">
-                                    <div class="articles__photo">
-                                        <img class="articles__photo--pic" src="./images/content/articles1.jpg" />
-                                    </div>
-                                    <div class="articles__data">
-                                        <div class="articles__data--text">12/11</div>
-                                    </div>
-                                    <div class="articles__text">
-                                        <span>Чем объяснить провал английского клубного регби?</span>
-                                    </div>
-                                    <div class="read">
-                                        <div class="read__text">
-                                            <a class="read__text--link">Читать</a>
+                            <div class="row row--quart">
+                                <ul class="articles__list">
+                                    <li class="articles__item">
+                                        <div class="articles__photo">
+                                            <img class="articles__photo--pic" src="./images/content/articles1.jpg">
+                                            <div class="articles__data">
+                                                <div class="articles__data--text">12/11</div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-
-                                <li class="articles__item">
-                                    <div class="articles__photo">
-                                        <img class="articles__photo--pic" src="./images/content/articles2.jpg" />
-                                    </div>
-                                    <div class="articles__data">
-                                        <div class="articles__data--text">12/11</div>
-                                    </div>
-                                    <div class="articles__text">
-                                        <span>Шэйн Уилльямс - прощальное интервью с великим игроком Уэльса</span>
-                                    </div>
-                                    <div class="read">
-                                        <div class="read__text">
-                                            <a class="read__text--link">Читать</a>
+                                        <div class="articles__text">
+                                            <span>Чем объяснить провал английского клубного регби?</span>
                                         </div>
-                                    </div>
-                                </li>
 
-                                <li class="articles__item">
-                                    <div class="articles__photo">
-                                        <img class="articles__photo--pic" src="./images/content/articles3.jpg" />
-                                    </div>
-                                    <div class="articles__data">
-                                        <div class="articles__data--text">12/11</div>
-                                    </div>
-                                    <div class="articles__text">
-                                        <span>Мысли из Новой Зеландии: ситуация в мире регби выравнивается. Новые чемпионы повержены</span>
-                                    </div>
-                                    <div class="read">
-                                        <div class="read__text">
-                                            <a class="read__text--link">Читать</a>
+                                        <div class="read">
+                                            <div class="read__text">
+                                                <a class="read__text--link">Читать</a>
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
+                                    </li>
 
-                                <li class="articles__item">
-                                    <div class="articles__photo">
-                                        <img class="articles__photo--pic" src="./images/content/articles4.jpg" />
-                                    </div>
-                                    <div class="articles__data">
-                                        <div class="articles__data--text">12/11</div>
-                                    </div>
-                                    <div class="articles__text">
-                                        <span>Итоги ноябрьских тестов: Дело скорее в психологии</span>
-                                    </div>
-                                    <div class="read">
-                                        <div class="read__text">
-                                            <a class="read__text--link">Читать</a>
+                                    <li class="articles__item">
+                                        <div class="articles__photo">
+                                            <img class="articles__photo--pic" src="./images/content/articles2.jpg">
+                                            <div class="articles__data">
+                                                <div class="articles__data--text">12/11</div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="articles__buttons">
-                            <div class="controls">
-                                <a class="controls__left">
-                                    <img class="arrow-left" src="./images/icons/arrow.svg" />
-                                </a>
-                                <a class="controls__right">
-                                    <img class="arrow-right" src="./images/icons/arrow.svg" />
-                                </a>
-                            </div>
+                                        <div class="articles__text">
+                                            <span>Шэйн Уилльямс - прощальное интервью с великим игроком Уэльса</span>
+                                        </div>
 
-                            <div class="articles__all">
-                                <a class="btn">Все новости</a>
+                                        <div class="read">
+                                            <div class="read__text">
+                                                <a class="read__text--link">Читать</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="articles__item">
+                                        <div class="articles__photo">
+                                            <img class="articles__photo--pic" src="./images/content/articles3.jpg">
+                                            <div class="articles__data">
+                                                <div class="articles__data--text">12/11</div>
+                                            </div>
+                                        </div>
+                                        <div class="articles__text">
+                                            <span>Мысли из Новой Зеландии: ситуация в мире регби выравнивается. Новые чемпионы повержены</span>
+                                        </div>
+
+                                        <div class="read">
+                                            <div class="read__text">
+                                                <a class="read__text--link">Читать</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="articles__item">
+                                        <div class="articles__photo">
+                                            <img class="articles__photo--pic" src="./images/content/articles4.jpg">
+                                            <div class="articles__data">
+                                                <div class="articles__data--text">12/11</div>
+                                            </div>
+                                        </div>
+                                        <div class="articles__text">
+                                            <span>Итоги ноябрьских тестов: Дело скорее в психологии.</span>
+                                        </div>
+
+                                        <div class="read">
+                                            <div class="read__text">
+                                                <a class="read__text--link">Читать</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="articles__buttons">
+                                    <div class="controls">
+                                        <a class="controls__left">
+                                            <img class="arrow-left" src="./images/icons/arrow.svg">
+                                        </a>
+                                        <a class="controls__right">
+                                            <img class="arrow-right" src="./images/icons/arrow.svg">
+                                        </a>
+                                    </div>
+
+                                    <div class="articles__all">
+                                        <a class="btn">Все новости</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </section>
 
             <section class="section footer">
                 <div class="container footer__container">
-                    <div class="footer__content">
+                    <div class="footer__content grid">
                         <div class="footer__content--left">
                             <div class="footer-logo">
                                 <div class="footer-logo__container">

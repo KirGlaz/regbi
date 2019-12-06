@@ -1,13 +1,8 @@
 .news {
-    grid-column: 1/13;
     font-family: "Noto Sans Display";
     background: #dfdfdf;
     padding-bottom: 56px;
-    &__container {
-        grid-column: 1/13;
-    }
     &__title {
-        grid-column: 1/13;
         display: flex;
         justify-content: center;
         align-items: center;
