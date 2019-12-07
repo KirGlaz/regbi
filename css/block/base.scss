@@ -119,6 +119,9 @@ img {
 }
 
 .btn {
+    &__min {
+        padding: 24px 40px 23px 40px;
+    }
     padding: 24px 55px 23px 55px;
     color: white;
     font-family: Noto Sans Display;
@@ -135,4 +138,8 @@ img {
 
 .about__container {
     display: flex;
+}
+
+.active-text {
+    color: #FB3D4E;
 }

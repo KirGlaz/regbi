@@ -1,10 +1,12 @@
 .footer {
     &__all {
-        padding-top: 30px;
+        padding-top: 2px;
     }
     padding-bottom: 30px;
     &__content {
+        grid-column: 1/13;
         padding: 20px 43px 50px 0px;
+        padding-bottom: 90px;
         background: white;
         display: flex;
         &--left {
@@ -86,7 +88,7 @@
     grid-column: 1/13;
     display: flex;
     margin-top: -33px;
-    margin-left: 16px;
+    padding: 0px 19px 0px 21px;
 }
 
 .communication {
@@ -101,7 +103,7 @@
         font-size: 12px;
         color: white;
         text-transform: uppercase;
-        margin-left: 45px;
+        padding: 22px 41px 20px 44px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -119,8 +121,10 @@
     align-items: center;
     &__list {
         display: flex;
+        padding: 11px 35px 11px 36px;
     }
     &__item {
+        width: 100%;
         margin-left: 15px;
         &:first-child {
             margin-left: 0px;
@@ -139,7 +143,7 @@
         font-size: 12px;
         text-transform: uppercase;
         color: #ffffff;
-        margin-left: 104px;
+        padding: 17px 100px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -161,7 +165,7 @@
         font-size: 12px;
         text-transform: uppercase;
         color: #ffffff;
-        margin-left: 58px;
+        padding: 11px 43px 8px 58px;
         display: flex;
         justify-content: center;
         align-items: center;

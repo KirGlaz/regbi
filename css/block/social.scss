@@ -1,5 +1,4 @@
 .social {
-    grid-column: 1/10;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -10,27 +9,14 @@
     &__content {
         background: white;
         display: flex;
-        justify-content: center;
-        align-items: center;
         grid-column: 1/10;
-        width: 100%;
+        padding-bottom: 40px;
+        padding-top: 40px;
     }
 }
 
-.social-title {
-    &__head {
-        margin-left: 50px;
-    }
-}
-
-.content-left,
-.content-right {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 40px;
-    padding-top: 40px;
+.content-left {
+    padding: 12px 207px 9px 131px;
 }
 
 .soc {

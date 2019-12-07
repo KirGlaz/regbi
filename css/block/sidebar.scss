@@ -1,12 +1,12 @@
 .sidebar {
+    grid-column: 10/13;
     margin-top: -67px;
-    width: 33.29%;
-    //background: #ffffff;
     z-index: 2;
 }
 
 .sidebar-menu {
-    width: 100%;
+    padding-left: 41px;
+    padding-right: 82px;
     font-family: Noto Sans Display;
     font-style: normal;
     font-weight: 900;
@@ -20,7 +20,6 @@
     align-items: center;
     justify-content: center;
     &__list {
-        width: 75.76%;
         padding-top: 41px;
         padding-bottom: 20px;
     }
@@ -39,16 +38,15 @@
 }
 
 .reports {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     &__content {
-        width: 100%;
         background: #fff;
     }
     &__name {
+        padding: 17px 37px 25px 39px;
         line-height: 150%;
         color: #244873;
         &--title {
@@ -68,15 +66,13 @@
     &__other {
         display: flex;
         &--left {
-            margin-left: 10px;
+            padding-left: 39px;
             border-top: 1px solid #f0f4fb;
             display: flex;
             align-items: center;
-            width: 32%;
-            height: 63px;
         }
         &--right {
-            margin-left: 73px;
+            margin-left: 52px;
         }
     }
 }

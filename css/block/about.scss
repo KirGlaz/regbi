@@ -1,8 +1,6 @@
 .about {
-    grid-column: 1/10;
     &__content {
         grid-column: 1/10;
-        width: 100%;
         background: white;
         margin-top: -67px;
         padding-bottom: 47px;
@@ -13,12 +11,10 @@
         text-transform: uppercase;
         font-style: normal;
         font-weight: 900;
-        width: 100%;
         border-bottom: 1px solid #f0f4fb;
         margin-bottom: 39px;
         padding-bottom: 38px;
         &--content {
-            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -27,7 +23,6 @@
         }
     }
     &__text {
-        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -57,7 +52,7 @@
 }
 
 .region {
-    width: 73.74%;
+    padding: 0px 123px 0px 133px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +75,6 @@
         }
     }
     &__text {
-        width: 95.34%;
         margin-left: 31px;
         line-height: 166%;
     }
