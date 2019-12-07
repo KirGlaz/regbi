@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    font-family: 'Noto Sans Display', Helvetica, sans-serif;
+    font-family: "Noto Sans Display", Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.42;
     -webkit-font-smoothing: antialiased;
@@ -17,7 +17,7 @@ body {
 }
 
 section {
-    background: #DFDFDF;
+    background: #dfdfdf;
 }
 
 button {
@@ -82,7 +82,7 @@ img {
 
 .maincontent {
     height: 100%;
-    background: #DFDFDF;
+    background: #dfdfdf;
     position: relative;
 }
 
@@ -116,6 +116,14 @@ img {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    &__custom {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    &__custom2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .btn {
@@ -141,5 +149,58 @@ img {
 }
 
 .active-text {
-    color: #FB3D4E;
+    color: #fb3d4e;
+}
+
+.all-title {
+    &__title {
+        font-family: Noto Sans Display;
+        font-style: normal;
+        font-weight: 900;
+        border-bottom: 1px solid #f0f4fb;
+        margin-bottom: 39px;
+        padding-bottom: 38px;
+        &--custom {
+            margin-bottom: 50px;
+        }
+        &--content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 39px;
+        }
+    }
+    &__head {
+        font-size: 24px;
+        color: #244873;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 150%;
+        color: #244873;
+        text-transform: none;
+    }
+    &__overhead {
+        display: flex;
+        font-size: 12px;
+        color: #244873;
+        margin-bottom: 17px;
+        text-transform: uppercase;
+    }
+}
+
+.contents {
+    grid-column: 1/10;
+    background: white;
+    margin-top: -67px;
+    padding-bottom: 47px;
+    border-bottom: 1px solid #f0f4fb;
+    &__custom {
+        padding-bottom: 0px;
+    }
 }

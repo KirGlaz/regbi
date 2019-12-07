@@ -321,7 +321,7 @@ html {
   height: 100%; }
 
 body {
-  font-family: 'Noto Sans Display', Helvetica, sans-serif;
+  font-family: "Noto Sans Display", Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
@@ -329,7 +329,7 @@ body {
   color: black; }
 
 section {
-  background: #DFDFDF; }
+  background: #dfdfdf; }
 
 button {
   border: 0;
@@ -384,7 +384,7 @@ img {
 
 .maincontent {
   height: 100%;
-  background: #DFDFDF;
+  background: #dfdfdf;
   position: relative; }
 
 .row {
@@ -414,6 +414,16 @@ img {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+  .grid__custom {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+  .grid__custom2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; }
 
 .btn {
   padding: 24px 55px 23px 55px;
@@ -443,7 +453,66 @@ img {
   display: flex; }
 
 .active-text {
-  color: #FB3D4E; }
+  color: #fb3d4e; }
+
+.all-title__title {
+  font-family: Noto Sans Display;
+  font-style: normal;
+  font-weight: 900;
+  border-bottom: 1px solid #f0f4fb;
+  margin-bottom: 39px;
+  padding-bottom: 38px; }
+  .all-title__title--custom {
+    margin-bottom: 50px; }
+  .all-title__title--content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 39px; }
+
+.all-title__head {
+  font-size: 24px;
+  color: #244873;
+  text-transform: uppercase; }
+
+.all-title__subtitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 150%;
+  color: #244873;
+  text-transform: none; }
+
+.all-title__overhead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  color: #244873;
+  margin-bottom: 17px;
+  text-transform: uppercase; }
+
+.contents {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 9;
+  grid-column: 1/10;
+  background: white;
+  margin-top: -67px;
+  padding-bottom: 47px;
+  border-bottom: 1px solid #f0f4fb; }
+  .contents__custom {
+    padding-bottom: 0px; }
 
 .header {
   -ms-grid-column: 1;
@@ -1580,7 +1649,7 @@ img {
     position: absolute;
     z-index: 1;
     left: 58%;
-    bottom: 2%; }
+    bottom: 50%; }
 
 .nav-about {
   margin-left: 50px; }
@@ -1588,39 +1657,6 @@ img {
     margin-left: 30px; }
     .nav-about__item:first-child {
       margin-left: 0px; }
-
-.about__content {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 9;
-  grid-column: 1/10;
-  background: white;
-  margin-top: -67px;
-  padding-bottom: 47px;
-  border-bottom: 1px solid #f0f4fb; }
-
-.about__title {
-  font-family: Noto Sans Display;
-  text-transform: uppercase;
-  font-style: normal;
-  font-weight: 900;
-  border-bottom: 1px solid #f0f4fb;
-  margin-bottom: 39px;
-  padding-bottom: 38px; }
-  .about__title--content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-top: 39px; }
 
 .about__text {
   display: -webkit-box;
@@ -1645,18 +1681,6 @@ img {
   .about__text--introduction, .about__text--region {
     width: 73.74%;
     margin-bottom: 20px; }
-
-.about__head {
-  font-size: 24px;
-  color: #244873; }
-
-.about__overhead {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 12px;
-  color: #244873;
-  margin-bottom: 17px; }
 
 .region {
   padding: 0px 123px 0px 133px;
@@ -1922,3 +1946,104 @@ img {
   .reports-test::after {
     content: url("../images/icons/test.svg");
     margin-left: 10px; }
+
+.target {
+  padding-bottom: 22px; }
+
+.sport {
+  background: #4639ae;
+  color: #ffffff;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2/7;
+  margin-left: 34px;
+  margin-right: 61px;
+  padding: 42px 40px 45px 40px;
+  position: relative;
+  margin-bottom: 60px; }
+  .sport__title {
+    padding-right: 90px;
+    padding-bottom: 10px;
+    font-family: Noto Sans Display;
+    font-size: 28px;
+    line-height: 130%;
+    text-transform: uppercase; }
+  .sport__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%; }
+  .sport__pic {
+    position: absolute;
+    bottom: 63%;
+    left: 75%; }
+
+.targets {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 8;
+  grid-column: 2/10; }
+  .targets__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 32px; }
+  .targets__title {
+    font-family: Noto Sans Display;
+    font-size: 28px;
+    line-height: 130%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #244873;
+    margin-left: 32px;
+    margin-bottom: 34px; }
+
+.mission {
+  font-family: Noto Sans Display;
+  font-size: 12px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #244873; }
+  .mission__one {
+    margin-right: 59px; }
+  .mission__two {
+    margin-right: 64px; }
+  .mission__item {
+    margin-bottom: 47px; }
+    .mission__item--pic {
+      margin-bottom: 15px; }
+    .mission__item--text {
+      padding-right: 12px; }
+
+.command__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: .5px solid #f0f4fb;
+  padding: 20px; }
+  .command__item--info {
+    margin-left: 29px;
+    margin-top: 35px; }
+
+.name {
+  font-family: Noto Sans Display;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #244873;
+  padding-bottom: 11px; }
+
+.prof {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 150%;
+  color: #244873; }

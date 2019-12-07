@@ -1,27 +1,4 @@
 .about {
-    &__content {
-        grid-column: 1/10;
-        background: white;
-        margin-top: -67px;
-        padding-bottom: 47px;
-        border-bottom: 1px solid #f0f4fb;
-    }
-    &__title {
-        font-family: Noto Sans Display;
-        text-transform: uppercase;
-        font-style: normal;
-        font-weight: 900;
-        border-bottom: 1px solid #f0f4fb;
-        margin-bottom: 39px;
-        padding-bottom: 38px;
-        &--content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 39px;
-        }
-    }
     &__text {
         display: flex;
         flex-direction: column;
@@ -38,16 +15,6 @@
             width: 73.74%;
             margin-bottom: 20px;
         }
-    }
-    &__head {
-        font-size: 24px;
-        color: #244873;
-    }
-    &__overhead {
-        display: flex;
-        font-size: 12px;
-        color: #244873;
-        margin-bottom: 17px;
     }
 }
 

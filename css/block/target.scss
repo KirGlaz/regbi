@@ -1,0 +1,76 @@
+.target {
+    padding-bottom: 22px;
+}
+
+.sport {
+    background: #4639ae;
+    color: #ffffff;
+    grid-column: 2/7;
+    margin-left: 34px;
+    margin-right: 61px;
+    padding: 42px 40px 45px 40px;
+    position: relative;
+    margin-bottom: 60px;
+    &__title {
+        padding-right: 90px;
+        padding-bottom: 10px;
+        font-family: Noto Sans Display;
+        font-size: 28px;
+        line-height: 130%;
+        text-transform: uppercase;
+    }
+    &__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 150%;
+    }
+    &__pic {
+        position: absolute;
+        bottom: 63%;
+        left: 75%;
+    }
+}
+
+.targets {
+    grid-column: 2/10;
+    &__info {
+        display: flex;
+        margin-left: 32px;
+    }
+    &__title {
+        font-family: Noto Sans Display;
+        font-size: 28px;
+        line-height: 130%;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #244873;
+        margin-left: 32px;
+        margin-bottom: 34px;
+    }
+}
+
+.mission {
+    font-family: Noto Sans Display;
+    font-size: 12px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #244873;
+    &__one {
+        margin-right: 59px;
+    }
+    &__two {
+        margin-right: 64px;
+    }
+    &__item {
+        margin-bottom: 47px;
+        &--pic {
+            margin-bottom: 15px;
+        }
+        &--text {
+            padding-right: 12px;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.command {
+    &__item {
+        display: flex;
+        border: .5px solid #f0f4fb;
+        padding: 20px;
+        &--info {
+            margin-left: 29px;
+            margin-top: 35px;
+        }
+    }
+}
+
+.name {
+    font-family: Noto Sans Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #244873;
+    padding-bottom: 11px;
+}
+
+.prof {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 150%;
+    color: #244873;
+}
