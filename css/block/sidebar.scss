@@ -2,6 +2,9 @@
     grid-column: 10/13;
     margin-top: -67px;
     z-index: 2;
+    &--news-det {
+        margin-top: -13px;
+    }
 }
 
 .sidebar-menu {
@@ -19,6 +22,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    &__custom {
+        padding-right: 40px;
+    }
     &__list {
         padding-top: 41px;
         padding-bottom: 20px;
@@ -88,4 +94,91 @@
         content: url("../images/icons/test.svg");
         margin-left: 10px;
     }
+}
+
+.education-title {
+    font-family: Noto Sans Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: relative;
+    &::after {
+        content: url("../images/icons/plus.svg");
+        position: absolute;
+        bottom: 24%;
+        left: 94%;
+    }
+    &__active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fb3d4e;
+        &::after {
+            content: url("../images/icons/minus.svg");
+            bottom: 24%;
+            left: 94%;
+        }
+    }
+    &--up {
+        padding-right: 66px;
+        margin-top: 41px;
+        margin-bottom: 15px;
+    }
+    &--down {
+        margin-top: 23px;
+        margin-bottom: 40px;
+        &-custom {
+            margin-bottom: 17px;
+        }
+    }
+    &--down-custom {
+        margin-top: 23px;
+        margin-bottom: 17px;
+    }
+}
+
+.education-menu,
+.education-lic-menu {
+    border-top: 1px solid #f0f4fb;
+    border-bottom: 1px solid #f0f4fb;
+    font-family: Noto Sans Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #ffffff;
+    &__item {
+        padding-left: 22px;
+        position: relative;
+        &::before {
+            content: url("../images/icons/white-arrow.svg");
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+        }
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 52px;
+        }
+        &:nth-child(1) {
+            margin-top: 20px;
+        }
+        &--active {
+            color: #fb3d4e;
+            &::before {
+                content: url("../images/icons/red-arror.svg");
+                position: absolute;
+                bottom: 0%;
+                left: 0%;
+            }
+        }
+    }
+}
+
+.education-lic-menu {
+    padding-right: 145px;
 }

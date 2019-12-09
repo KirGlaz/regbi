@@ -71,6 +71,7 @@ img {
     overflow: hidden;
     min-height: 100%;
     position: relative;
+    background: #dfdfdf;
 }
 
 .container {
@@ -161,20 +162,27 @@ img {
         margin-bottom: 39px;
         padding-bottom: 38px;
         &--custom {
-            margin-bottom: 50px;
+            padding-bottom: 50px;
+            background: white;
+        }
+        &--custom-news {
+            padding-bottom: 42px;
         }
         &--content {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-top: 39px;
+            padding-top: 39px;
         }
     }
     &__head {
         font-size: 24px;
         color: #244873;
         text-transform: uppercase;
+        &--custom {
+            margin-bottom: 18px;
+        }
     }
     &__subtitle {
         font-family: Montserrat;
@@ -184,6 +192,7 @@ img {
         line-height: 150%;
         color: #244873;
         text-transform: none;
+        margin-top: 8px;
     }
     &__overhead {
         display: flex;
@@ -191,6 +200,22 @@ img {
         color: #244873;
         margin-bottom: 17px;
         text-transform: uppercase;
+        &--custom {
+            margin-bottom: 48px;
+        }
+    }
+    &__info {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 150%;
+        text-align: center;
+        color: #244873;
+        padding: 0px 126px;
+        &--custom {
+            margin-bottom: 17px;
+        }
     }
 }
 
@@ -202,5 +227,21 @@ img {
     border-bottom: 1px solid #f0f4fb;
     &__custom {
         padding-bottom: 0px;
+        background: none;
+        border-bottom: none;
+        &--news {
+            padding-bottom: 22px;
+        }
+        &--news-det {
+            margin-top: -13px;
+            background: white;
+        }
+        &--ed {
+            padding-bottom: 0px;
+        }
     }
+}
+
+.borders {
+    border-left: 1px solid #f0f4fb;
 }

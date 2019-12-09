@@ -4,6 +4,9 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 79px;
+    &__custom {
+        margin-bottom: 18px;
+    }
 }
 
 .logo {
@@ -39,7 +42,7 @@
             margin-left: 0px;
         }
         &:hover {
-            color: #FB3D4E;
+            color: #fb3d4e;
             .header-menu {
                 left: 100%;
                 opacity: 1;
