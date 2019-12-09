@@ -1494,22 +1494,15 @@ img {
 
 .socials {
   background: #e0e5ee;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+      width: auto;
+}
   .socials__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: 11px 35px 11px 36px; }
   .socials__item {
-    width: 100%;
+    flex-shrink: 0;
     margin-left: 15px; }
     .socials__item:first-child {
       margin-left: 0px; }
