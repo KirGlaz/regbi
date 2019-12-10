@@ -175,6 +175,11 @@ img {
             align-items: center;
             padding-top: 39px;
         }
+        &--manager {
+            border-bottom: 1px solid #f0f4fb;
+            margin-bottom: 0px;
+            padding-bottom: 27px;
+        }
     }
     &__head {
         font-size: 24px;
@@ -182,6 +187,10 @@ img {
         text-transform: uppercase;
         &--custom {
             margin-bottom: 18px;
+        }
+        &--title-manager {
+            text-align: center;
+            padding: 0px 87px;
         }
     }
     &__subtitle {

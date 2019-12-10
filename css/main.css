@@ -483,6 +483,10 @@ img {
     -ms-flex-align: center;
     align-items: center;
     padding-top: 39px; }
+  .all-title__title--manager {
+    border-bottom: 1px solid #f0f4fb;
+    margin-bottom: 0px;
+    padding-bottom: 27px; }
 
 .all-title__head {
   font-size: 24px;
@@ -490,6 +494,9 @@ img {
   text-transform: uppercase; }
   .all-title__head--custom {
     margin-bottom: 18px; }
+  .all-title__head--title-manager {
+    text-align: center;
+    padding: 0px 87px; }
 
 .all-title__subtitle {
   font-family: Montserrat;
@@ -2487,3 +2494,116 @@ img {
     .education-lic__info--data::before {
       content: url("../../images/icons/data-ed-rgin.svg");
       margin-right: 16px; }
+
+.manager-menu {
+  font-family: Noto Sans Display;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  color: #244873; }
+  .manager-menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1/13;
+    border-bottom: 1px solid #f0f4fb;
+    margin: 0px 60px;
+    padding: 28px 0px 0px 0px; }
+  .manager-menu__item {
+    margin-right: 16px;
+    text-transform: uppercase; }
+    .manager-menu__item:last-child {
+      margin-right: 0px; }
+  .manager-menu__item-active {
+    font-family: Noto Sans Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #fb3d4e; }
+    .manager-menu__item-active::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: #fb3d4e;
+      display: block;
+      margin-top: 20px; }
+
+.manager-info {
+  margin: 43px 60px 0px 60px; }
+  .manager-info__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #f0f4fb;
+    padding: 24px 25px 26px 48px;
+    margin-left: 1px; }
+    .manager-info__item:first-child {
+      margin-left: 0px; }
+    .manager-info__item--pic {
+      margin-right: 24px; }
+
+.manager-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 150%;
+  color: #244873;
+  margin-bottom: 5px; }
+
+.manager-text {
+  font-family: Noto Sans Display;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #244873; }
+
+.programm {
+  margin-top: 41px;
+  border-top: 1px solid #f0f4fb; }
+  .programm__left {
+    padding: 39px 33px 0px 63px;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+    color: #244873; }
+    .programm__left--title {
+      font-family: Noto Sans Display;
+      font-size: 28px;
+      line-height: 130%;
+      text-transform: uppercase;
+      margin-bottom: 20px; }
+    .programm__left--text {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 11px;
+      line-height: 150%; }
+  .programm__right {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 6;
+    grid-column: 5/11; }
+    .programm__right--list {
+      border-left: 1px solid #8aa5c6; }
+
+.mod-up {
+  font-family: Noto Sans Display;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #244873; }
