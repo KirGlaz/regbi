@@ -1,0 +1,17 @@
+==
+<!doctype html>
+<html lang="en">
+{% partial 'head' %}
+<body>
+    {{'/themes/raikin/assets/img/svg/svg-common-icon-defs.svg'|contents}}
+    <div class="scroll-fix">
+        {% partial 'blocks/header' %}
+        <div class="scroll-fix__content">
+            {% page %}
+            {% partial 'blocks/footer' %}
+            {% partial 'modals' %}
+            {% partial 'scripts' %}
+        </div>
+    </div>
+</body>
+</html>

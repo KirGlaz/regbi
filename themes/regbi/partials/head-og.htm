@@ -1,0 +1,28 @@
+description = "+"
+==
+{% if not type %}
+{% set type = 'article' %}
+{% endif %}
+
+{% if not title %}
+{% set title = 'title' %}
+{% endif %}
+
+{% if not description %}
+{% set description = 'description' %}
+{% endif %}
+
+<meta property="og:site_name" content="site_name" />
+<meta property="og:type" content="{{ type }}"/>
+<meta property="og:title" content="{{ title }}"/>
+{% if not url %}
+<meta property="og:url" content="{{ ''|app }}"/>
+{% else  %}
+<meta property="og:url" content="{{ url|app }}"/>
+{% endif %}
+<meta property="og:description" content="{{ description }}"/>
+{% if not image %}
+<meta property="og:image" content="{{ 'path/to/logo/logo.png'|theme }}"/>
+{% else %}
+<meta property="og:image" content="{{ image }}"/>
+{% endif %}

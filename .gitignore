@@ -1,0 +1,19 @@
+# Created by .ignore support plugin (hsz.mobi)
+.htaccess
+robots.txt
+artisan
+bootstrap/
+config/
+index.php
+modules/
+server.php
+storage/
+node_modules/
+vendor/
+/plugins/october/demo
+/plugins/gromit/common/
+/plugins/gromit/imageproxy/
+/plugins/gromit/slider/
+/plugins/pikanji
+/plugins/romanov
+plugins/october/

@@ -1,0 +1,257 @@
+title = "Demo"
+url = "/demo"
+layout = "main_layout"
+is_hidden = 1
+==
+{% put seo %}
+    {%
+        partial 'seo-meta'
+        title = this.page.title
+    %}
+{% endput %}
+
+{% put og %}
+    {%
+        partial 'og-meta'
+        title = this.page.title
+    %}
+{% endput %}
+{% put pageScripts %}
+    <script>
+        $(function() {
+            $('.slider').slick();
+            $('.carousel').slick({
+                slidesToShow: 3,
+                arrows: false,
+                dots: true,
+                padding: 15,
+            })
+        });
+    </script>
+{% endput %}
+{% put pageStyle %}
+<link rel="stylesheet" href="{{['assets/css/pages/demo.less']|theme}}">
+{% endput %}
+{% put pageModal %}
+    <div id="modal" class="modal">
+        <div class="modal__close arcticmodal-close"></div>
+        <div class="modal__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam facere culpa neque asperiores commodi, illo, officiis fuga perferendis dolore repellendus sapiente ipsum sit vitae dolor accusantium possimus architecto debitis temporibus.
+        </div>
+    </div>
+{% endput %}
+<div class="container">
+    <div class="row">
+        <div class="col lg-12"><h2>Сетка</h2></div>
+		<div class="col lg-6 sm-3 md-4 tac">text align center</div>
+		<div class="col lg-6 sm-3 md-4 tar">text align right</div>
+		<div class="col lg-3 sm-3 md-4">
+            icons
+            <span class="icon phone"></span>
+            <span class="icon download"></span>
+        </div>
+		<div class="col lg-9 sm-3 md-4">4</div>
+		<div class="col lg-2 sm-6 md-4">5</div>
+		<div class="col lg-10 sm-6 md-4">6</div>
+	</div>
+	<div class="row">
+		<div class="col lg-6 sm-3 md-4">1</div>
+		<div class="col lg-6 sm-3 md-4">2</div>
+		<div class="col lg-4 sm-3 md-4">3</div>
+		<div class="col lg-4 sm-4 md-4">4</div>
+		<div class="col lg-4 sm-6 md-4">5</div>
+        <div class="col lg-10 sm-6 md-4">6</div>
+		<div class="col lg-2 sm-6 md-4">7</div>
+	</div>
+    <div class="row">
+        <div class="col lg-6">
+            <h2>Menu</h2>
+            <ul class="menu">
+                <li><a href="#">menu item 1</a></li>
+                <li><a href="#">menu item 2</a></li>
+                <li><a href="#">menu item 3</a></li>
+                <li><a href="#">menu item 4</a></li>
+                <li><a href="#">menu item 5</a></li>
+            </ul>
+        </div>
+        <div class="col lg-6">
+            <h2>Menu horizontal</h2>
+             <ul class="menu menu--horizontal">
+                <li><a href="#">menu item 1</a></li>
+                <li><a href="#">menu item 2</a></li>
+                <li><a href="#">menu item 3</a></li>
+                <li><a href="#">menu item 4</a></li>
+                <li><a href="#">menu item 5</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col lg-6 md-12">
+            <h2>Slick slider</h2>
+            <a href="http://kenwheeler.github.io/slick/" target="_blank">http://kenwheeler.github.io/slick/</a>
+            <div class="slider">
+                <div><img src="http://via.placeholder.com/350x150"></div>
+                <div><img src="http://via.placeholder.com/350x150"></div>
+                <div><img src="http://via.placeholder.com/350x150"></div>
+                <div><img src="http://via.placeholder.com/350x150"></div>
+                <div><img src="http://via.placeholder.com/350x150"></div>
+                <div><img src="http://via.placeholder.com/350x150"></div>
+            </div>
+        </div>
+        <div class="col lg-6 md-12">
+            <h2>Slick carousel</h2>
+            <div class="carousel">
+                <div><img src="http://via.placeholder.com/350x150"></div>
+                <div><img src="http://via.placeholder.com/350x150"></div>
+                <div><img src="http://via.placeholder.com/350x150"></div>
+                <div><img src="http://via.placeholder.com/350x150"></div>
+                <div><img src="http://via.placeholder.com/350x150"></div>
+                <div><img src="http://via.placeholder.com/350x150"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col lg-12">
+            <h2>Табы</h2>
+            <div class="tab-wrapper tab-short">
+                <div class="tab-labels tab-label-largre-offset">
+                    <div class="tab-label active" data-tab="1">Заголовок 1</div>
+                    <div class="tab-label" data-tab="2">Заголовок 2</div>
+                    <div class="tab-label" data-tab="3">Заголовок 3</div>
+                    <div class="tab-label" data-tab="4">Заголовок 4</div>
+                    <div class="tab-label" data-tab="5">Заголовок 5</div>
+                </div>
+                <div class="tab-contents">
+                    <div class="tab-content active" data-tab="1">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam enim assumenda eveniet consectetur ex doloribus, veniam asperiores incidunt, mollitia placeat, iusto, pariatur sequi hic esse. Explicabo, aut non similique consequuntur.
+                    </div>
+                    <div class="tab-content" data-tab="2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam enim assumenda eveniet consectetur ex doloribus, veniam asperiores incidunt, mollitia placeat, iusto, pariatur sequi hic esse. Explicabo, aut non similique consequuntur.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam enim assumenda eveniet consectetur ex doloribus, veniam asperiores incidunt, mollitia placeat, iusto, pariatur sequi hic esse. Explicabo, aut non similique consequuntur.
+                    </div>
+                    <div class="tab-content" data-tab="3">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam enim assumenda eveniet consectetur ex doloribus, veniam asperiores incidunt, mollitia placeat, iusto, pariatur sequi hic esse. Explicabo, aut non similique consequuntur.
+                    </div>
+                    <div class="tab-content" data-tab="4">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam enim assumenda eveniet consectetur ex doloribus, veniam asperiores incidunt, mollitia placeat, iusto, pariatur sequi hic esse. Explicabo, aut non similique consequuntur.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam enim assumenda eveniet consectetur ex doloribus, veniam asperiores incidunt, mollitia placeat, iusto, pariatur sequi hic esse. Explicabo, aut non similique consequuntur.
+                    </div>
+                    <div class="tab-content" data-tab="5">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam enim assumenda eveniet consectetur ex doloribus, veniam asperiores incidunt, mollitia placeat, iusto, pariatur sequi hic esse. Explicabo, aut non similique consequuntur.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col lg-6">
+            <p><a href="#modal" class="modal-link button">Show modal</a></p>
+        </div>
+        <div class="col lg-6">
+            <p><span class="toggler button" data-toggle-selector='.for-toggle-elem' data-toggle-to='active'>Toggler</span></p>
+            <p><span class="for-toggle-elem">i'll be toggled</span> <span class="for-toggle-elem active">i too!!!</span></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col lg-6">
+            <h2>button</h2>
+            <button class="button">default button</button>
+            <button class="button button--secondary">secondary button</button>
+            <h2>hollow</h2>
+            <button class="button  button--hollow">default button</button>
+            <button class="button button--secondary  button--hollow">secondary button</button>
+        </div>
+        <div class="col lg-6">
+            <h2>inverted</h2>
+            <button class="button invert">default button</button>
+            <button class="button invert button--secondary">secondary button</button>
+            <h2>hollow</h2>
+            <button class="button invert button--hollow">default button</button>
+            <button class="button invert button--secondary button--hollow">secondary button</button>
+        </div>
+    </div>
+        <div class="row">
+        <div class="col lg-6">
+            <form>
+                <div class="form-section">
+                    <div class="form-group">
+                        <label class="form-group__label">
+                            <select name="trc" class="form-group__select">
+                                <option value="test">tset</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group__label form-group__label--required">
+                            <span>полное название организации</span>
+                            <input type="text" name="org[name]" required="">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <div class="form-section__title">Размер интересующей торговой площади (кв.м.)</div>
+                    <div class="form-group">
+                        <label class="form-group__label form-group__label--number">
+                            <span>от</span>
+                            <span class="increment-controls">
+                                <span class="increment-controls__up"></span>
+                                <input type="text" name="org[square_from]" class="form-group__input">
+                                <span class="increment-controls__down"></span>
+                            </span>
+                        </label>
+                        <label class="form-group__label form-group__label--number">
+                            <span>до</span>
+                            <span class="increment-controls">
+                                <span class="increment-controls__up"></span>
+                                <input type="text" name="org[square_to]" class="form-group__input">
+                                <span class="increment-controls__down"></span>
+                            </span>
+                        </label>
+                        <label class="form-group__label form-group__label--number">
+                            <span>оптимальный</span>
+                            <span class="increment-controls">
+                                <span class="increment-controls__up"></span>
+                                <input type="text" name="org[square_optimal]" class="form-group__input">
+                                <span class="increment-controls__down"></span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <div class="form-section__title">Контактная информация</div>
+                    <div class="form-group">
+                        <label class="form-group__label form-group__label--required">
+                            <span>эл.почта</span>
+                            <input type="email" name="org[email]" class="form-group__input" required="">
+                        </label>
+                        <label class="form-group__label form-group__label--required">
+                            <span>телефон</span>
+                            <input type="tel" name="org[phone]" class="form-group__input" required="">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group__label">
+                            <span>сайт</span>
+                            <input type="email" name="org[site]" class="form-group__input">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group__label form-group__label--file">
+                            <span>сайт</span>
+                            <input type="file" name="org[presentation]" class="form-group__input">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <label class="form-group__label form-group__label--checkbox form-group__label--required">
+                        <span>Согласен на <a href="/polzovatelskoe-soglashenie" target="_blank">обработку персональных данных</a></span>
+                        <input type="checkbox" name="agree" class="form-group__input" required>
+                    </label>
+                    <label class="form-group__label form-group__label--button">
+                        <button class="button" type="submit">отправить</button>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

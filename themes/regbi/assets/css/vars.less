@@ -1,0 +1,42 @@
+//grid
+
+@spacer: 20px;
+
+@columnCount: 12;
+@baseWidth: 100% / @columnCount;
+@baseWidthVW: calc(~'(100vw - @{spacer * 2}) / @{columnCount}');
+
+@siteWidth: 1200px;
+
+//breakpoints
+
+@large: 1600px;
+@largeStart: @medium + 1px;
+
+@medium: 1180px;
+@mediumStart: @small + 1px;
+
+@small:  750px;
+
+@sm: ~"screen and (max-width: @{small} )";
+@notsm: ~"screen and (min-width: @{mediumStart} )";
+@supersm: ~"screen and (max-width: 413px )";
+
+//typography
+@baseFont: 'Arial', sans-serif;
+@baseFontSize: 14px;
+@headerFont: 'Tahoma', serif;
+//colors
+@primary: #333;
+@secondary: #ddd;
+@accent: #ccc;
+@link: #f00;
+
+//mixins
+//transition
+.trs(@prop){
+    -webkit-transition: @prop .3s ease;
+    -o-transition: @prop .3s ease;
+    transition: @prop .3s ease;
+}
+

@@ -1,0 +1,30 @@
+title = "Главная"
+url = "/"
+layout = "main_layout"
+is_hidden = 0
+==
+{% put seo %}
+    {%
+        partial 'head-seo'
+        title = this.page.title
+    %}
+{% endput %}
+{% put og %}
+    {%
+        partial 'head-og'
+        title = this.page.title
+    %}
+{% endput %}
+{% put pageStyle %}
+<link
+    rel="stylesheet"
+    href="{{[
+        'assets/css/pages/glavnaya.less',
+        ]|theme}}"
+>
+{% endput %}
+{% put pageScripts %}
+<script>
+
+</script>
+{% endput %}

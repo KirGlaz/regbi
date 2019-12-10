@@ -1,0 +1,7 @@
+name: Gromit - Регби
+description: 'Тема для October CMS'
+author: 'Куртеев Николай'
+homepage: 'http://grom-it.ru/'
+code: ''
+require:
+    - Gromit.Common

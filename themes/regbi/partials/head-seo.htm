@@ -1,0 +1,15 @@
+description = "+"
+==
+{% if not title %}
+    {% set title = 'title' %}
+{% endif %}
+{% if not description %}
+    {% set description = 'description' %}
+{% endif %}
+{% if not keywords %}
+    {% set keywords = 'ключевые, слова' %}
+{% endif %}
+<title>{{ title }} {% if not hide_company %}| Название Компании {% endif %}
+</title>
+<meta name="description" content="{{ description }}"/>
+<meta name="keywords" content="keywords, {{ keywords }}">
