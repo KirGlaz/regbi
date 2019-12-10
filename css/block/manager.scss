@@ -1,0 +1,122 @@
+.manager-menu {
+    font-family: Noto Sans Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    color: #244873;
+    &__list {
+        display: flex;
+        grid-column: 1/13;
+        border-bottom: 1px solid #f0f4fb;
+        margin: 0px 60px;
+        padding: 28px 0px 0px 0px;
+    }
+    &__item {
+        margin-right: 16px;
+        text-transform: uppercase;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+    &__item-active {
+        font-family: Noto Sans Display;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: #fb3d4e;
+        &::after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background: #fb3d4e;
+            display: block;
+            margin-top: 20px;
+        }
+    }
+}
+
+.manager-info {
+    margin: 43px 60px 0px 60px;
+    &__item {
+        display: flex;
+        background: #f0f4fb;
+        padding: 24px 25px 26px 48px;
+        margin-left: 1px;
+        &:first-child {
+            margin-left: 0px;
+        }
+        &--pic {
+            margin-right: 24px;
+        }
+    }
+}
+
+.manager-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 150%;
+    color: #244873;
+    margin-bottom: 5px;
+}
+
+.manager-text {
+    font-family: Noto Sans Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #244873;
+}
+
+.programm {
+    margin-top: 41px;
+    border-top: 1px solid #f0f4fb;
+    &__left {
+        padding: 39px 33px 0px 63px;
+        grid-column: 1/5;
+        color: #244873;
+        &--title {
+            font-family: Noto Sans Display;
+            font-size: 28px;
+            line-height: 130%;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        &--text {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 11px;
+            line-height: 150%;
+        }
+    }
+    &__right {
+        grid-column: 5/11;
+        &--list {
+            border-left: 1px solid #8aa5c6;
+        }
+        &--item {}
+    }
+}
+
+.mod-up {
+    font-family: Noto Sans Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #244873;
+}
+
+.mod-down {
+    &--up {}
+}
