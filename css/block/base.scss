@@ -131,6 +131,10 @@ img {
     &__min {
         padding: 24px 40px 23px 40px;
     }
+    &__news {
+        padding: 20px 26px 15px 29px;
+        margin: 20px 7px 34px 51px;
+    }
     padding: 24px 55px 23px 55px;
     color: white;
     font-family: Noto Sans Display;
@@ -202,6 +206,18 @@ img {
         color: #244873;
         text-transform: none;
         margin-top: 8px;
+        &--glossari {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 150%;
+            color: #244873;
+            text-transform: none;
+            margin-top: 8px;
+            padding: 0px 147px;
+            text-align: center;
+        }
     }
     &__overhead {
         display: flex;

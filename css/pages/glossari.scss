@@ -1,0 +1,77 @@
+.glossari {
+    margin-bottom: 63px;
+    &__content {
+        border-top: 1px solid #f0f4fb;
+    }
+}
+
+.dark {
+    font-family: Noto Sans Display;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #244873;
+}
+
+.abc {
+    &__list {
+        grid-column: 1/13;
+        display: flex;
+        font-family: Noto Sans Display;
+        font-size: 16px;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: #8aa5c6;
+        padding: 41px 153px;
+    }
+    &__item {
+        margin-right: 16px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+    &__active {
+        color: #fb3d4e;
+    }
+}
+
+.words {
+    &__list {}
+    &__item {
+        border-bottom: 1px solid #f0f4fb;
+        margin: 0px 81px;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    &__name {
+        padding-left: 49px;
+        padding-top: 26px;
+        grid-column: 1/4;
+        &--title {
+            font-family: Noto Sans Display;
+            font-size: 16px;
+            line-height: 150%;
+            text-transform: uppercase;
+            color: #244873;
+        }
+        &--text {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 11px;
+            line-height: 150%;
+            color: #8aa5c6;
+        }
+    }
+    &__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 150%;
+        color: #244873;
+        padding: 29px 45px 22px 63px;
+        grid-column: 4/13;
+    }
+}

@@ -54,6 +54,7 @@
         line-height: 150%;
         text-transform: uppercase;
         color: #244873;
+        padding: 39px 83px 22px 131px;
     }
     &__subtitle {
         font-family: Montserrat;
@@ -62,5 +63,71 @@
         font-size: 13px;
         line-height: 150%;
         color: #244873;
+        padding: 0px 127px 22px 132px;
+    }
+}
+
+.ticket {
+    &__link {
+        grid-column: 2/5;
+        &::before {
+            content: url("../images/icons/news-det1.svg");
+            margin-right: 10px;
+        }
+    }
+    &__comment {
+        grid-column: 5/8;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 150%;
+        color: #42454b;
+        padding: 32px 0px 10px 23px;
+    }
+}
+
+.det-slider {
+    padding: 7px 34px 40px 132px;
+    position: relative;
+    &__info {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 150%;
+        color: #244873;
+        padding-top: 20px;
+    }
+}
+
+.det-info {
+    padding: 0px 140px 27px 132px;
+    &__title {
+        font-family: Noto Sans Display;
+        font-size: 16px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #244873;
+        margin-bottom: 21px;
+    }
+}
+
+.det-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    color: #244873;
+    &__item {
+        display: flex;
+        margin-bottom: 33px;
+        &::before {
+            content: url("../images/icons/about.svg");
+            margin-right: 19px;
+        }
     }
 }

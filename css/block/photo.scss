@@ -5,7 +5,7 @@
 .photos {
     grid-column: 1/10;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .photo-left {
@@ -37,6 +37,16 @@
 .info-down {
     padding: 0px 146px 60px 130px;
     border-bottom: 1px solid #f0f4fb;
+    &__custom {
+        padding: 0px 146px 13px 129px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 161%;
+        font-size: 13px;
+        color: #244873;
+        background: white;
+    }
 }
 
 .slider-photo {
@@ -49,6 +59,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        &--custom {
+            padding: 22px 44px 20px 50px;
+            position: absolute;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 71.1%;
+        }
     }
 }
 

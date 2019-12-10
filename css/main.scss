@@ -1,8 +1,20 @@
 @import "./block/normalise.scss";
 @import "./block/fonts.scss";
 @import "./block/base.scss";
+
+@import "./pages/mains.scss";
+@import "./pages/about.scss";
+@import "./pages/target.scss";
+@import "./pages/team.scss";
+@import "./pages/news-pages.scss";
+@import "./pages/news-det.scss";
+@import "./pages/education.scss";
+@import "./pages/education-lic.scss";
+@import "./pages/manager.scss";
+@import "./pages/glossari.scss";
+
+
 @import "./block/header.scss";
-@import "./block/mains.scss";
 @import "./block/navigation.scss";
 @import "./block/news.scss";
 @import "./block/academy.scss";
@@ -11,14 +23,6 @@
 @import "./block/footer.scss";
 @import "./block/header-menu.scss";
 @import "./block/main-about.scss";
-@import "./block/about.scss";
 @import "./block/photo.scss";
 @import "./block/social.scss";
 @import "./block/sidebar.scss";
-@import "./block/target.scss";
-@import "./block/team.scss";
-@import "./block/news-pages.scss";
-@import "./block/news-det.scss";
-@import "./block/education.scss";
-@import "./block/education-lic.scss";
-@import "./block/manager.scss";
