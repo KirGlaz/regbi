@@ -1,3 +1,7 @@
+.manager {
+    margin-bottom: 55px;
+}
+
 .manager-menu {
     font-family: Noto Sans Display;
     font-style: normal;
@@ -62,6 +66,15 @@
     line-height: 150%;
     color: #244873;
     margin-bottom: 5px;
+    &--custom {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 150%;
+        color: #244873;
+        margin-bottom: 5px;
+        font-size: 13px;
+    }
 }
 
 .manager-text {
@@ -72,11 +85,23 @@
     line-height: 130%;
     text-transform: uppercase;
     color: #244873;
+    &--custom {
+        font-family: Noto Sans Display;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 12px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #244873;
+        margin-bottom: 10px;
+    }
 }
 
 .programm {
     margin-top: 41px;
+    padding-bottom: 18px;
     border-top: 1px solid #f0f4fb;
+    border-bottom: 1px solid #f0f4fb;
     &__left {
         padding: 39px 33px 0px 63px;
         grid-column: 1/5;
@@ -97,11 +122,14 @@
         }
     }
     &__right {
-        grid-column: 5/11;
+        padding: 36px 0px 0px 56px;
+        grid-column: 5/12;
         &--list {
             border-left: 1px solid #8aa5c6;
         }
-        &--item {}
+        &--item {
+            margin-bottom: 35px;
+        }
     }
 }
 
@@ -115,8 +143,261 @@
     align-items: center;
     text-transform: uppercase;
     color: #244873;
+    margin-bottom: 12px;
+    margin-left: -6px;
+    &::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        background: #8aa5c6;
+        border-radius: 50%;
+        display: block;
+        margin-right: 31px;
+    }
+}
+
+.mod-green {
+    font-family: Noto Sans Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #00c38d;
+    display: flex;
+    align-items: center;
+    margin-left: -6px;
+    &::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        background: #00c38d;
+        border-radius: 50%;
+        display: block;
+        margin-right: 31px;
+    }
 }
 
 .mod-down {
-    &--up {}
+    margin-bottom: 10px;
+    &__up {
+        font-family: Noto Sans Display;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 12px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #8aa5c6;
+        display: flex;
+        align-items: center;
+        margin-left: -4px;
+        &::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            background: #8aa5c6;
+            border-radius: 50%;
+            display: block;
+            margin-right: 33px;
+        }
+    }
+    &__down {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 150%;
+        color: #8aa5c6;
+        margin-left: 35px;
+    }
+}
+
+.sked__list {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    color: #244873;
+    &--one {
+        grid-column: 1/5;
+        padding: 26px 0px 0px 62px;
+    }
+    &--two {
+        grid-column: 5/13;
+        padding: 26px 0px 0px 132px;
+    }
+}
+
+.sked__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.num1 {
+    &::before {
+        content: "01";
+        font-family: Noto Sans Display;
+        font-size: 16px;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: #00c38d;
+        margin-right: 15px;
+    }
+}
+
+.num2 {
+    &::before {
+        content: "02";
+        font-family: Noto Sans Display;
+        font-size: 16px;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: #00c38d;
+        margin-right: 15px;
+    }
+}
+
+.minus {
+    &::before {
+        content: "";
+        width: 15px;
+        height: 2px;
+        background: #00c38d;
+        display: block;
+        margin-right: 15px;
+    }
+}
+
+.diplom__content {
+    grid-column: 1/13;
+    display: flex;
+    background: #f0f4fb;
+    margin: 7px 58px 0px 63px;
+    padding: 22px 50px 20px 0px;
+}
+
+.diplom__pic {
+    margin-left: 39px;
+    margin-right: 26px;
+}
+
+.form {
+    padding-top: 40px;
+    &__left {
+        background: #4639ae;
+        grid-column: 1/5;
+        padding: 60px 36px 129px 62px;
+    }
+    &__right {
+        grid-column: 5/13;
+        padding: 60px 56px 45px 55px;
+    }
+    &__title {
+        font-family: Noto Sans Display;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 11px;
+    }
+    &__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 150%;
+        color: #ffffff;
+    }
+}
+
+.forms {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    color: #244873;
+    &__row {
+        display: flex;
+        margin-bottom: 20px;
+        &--custom {
+            padding-top: 25px;
+        }
+    }
+    &__block {
+        margin-left: 21px;
+        &:first-child {
+            margin-left: 0px;
+        }
+    }
+    &__imput {
+        padding: 20px 75px 20px 22px;
+        background: #f0f4fb;
+        border: none;
+        width: 100%;
+        &--texteria {
+            padding: 20px 5px 9px 22px;
+            resize: none;
+        }
+    }
+    &__radio {
+        display: flex;
+    }
+}
+
+.check {
+    padding-top: 18px;
+    margin-right: 92px;
+    &__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 150%;
+        color: #244873;
+    }
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    left: -999em;
+}
+
+input[type="checkbox"]+label {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+input[type="checkbox"]+label::before {
+    content: "";
+    display: inline-block;
+    vertical-align: -25%;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border: 2px solid #8aa5c6;
+    margin-right: 23px;
+}
+
+input[type="checkbox"]:checked+label::after {
+    content: "";
+    position: absolute;
+    width: 1.4ex;
+    height: 1ex;
+    background: rgba(0, 0, 0, 0);
+    top: 0.2ex;
+    left: 0.8ex;
+    border: 2px solid #00c38d;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
