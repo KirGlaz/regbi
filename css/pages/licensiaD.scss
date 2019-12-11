@@ -1,0 +1,40 @@
+.licensia {
+    margin-bottom: 64px;
+    &__title {
+        padding: 37px 0px 0px 61px;
+        &--left {
+            font-family: Noto Sans Display;
+            font-size: 28px;
+            line-height: 130%;
+            text-transform: uppercase;
+            color: #244873;
+            grid-column: 1 / 9;
+        }
+        &--right {
+            padding: 10px 0px 10px 60px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 150%;
+            color: #244873;
+            grid-column: 9 / 13;
+        }
+    }
+}
+
+.form__right--D {
+    padding: 52px 56px 22px 55px;
+    grid-column: 5 / 13;
+}
+
+.form__left--D {
+    padding: 60px 36px 63px 62px;
+    background: #4639ae;
+    grid-column: 1 / 5;
+}
+
+.forms__row--D {
+    display: flex;
+    margin-bottom: 6px;
+}

@@ -1,0 +1,37 @@
+.contents__map {
+    position: relative;
+    width: 1320px;
+    height: 630px;
+}
+
+.contacts {
+    margin-bottom: 57px;
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+}
+
+.map-contacts {
+    position: absolute;
+    z-index: 2;
+    background: white;
+    top: 65px;
+    left: 19px;
+    &__info {
+        border-top: 1px solid #f0f4fb;
+        padding: 41px 13px 39px 48px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        padding-bottom: 30px;
+        &:last-child {
+            padding-bottom: 0px;
+        }
+        &--pic {
+            margin-right: 25px;
+        }
+    }
+}
